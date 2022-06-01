@@ -1,0 +1,168 @@
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+.calcu{
+    margin-top: 10%;
+    margin-left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    width: 50%;
+    height: 0%;
+    text-align: center;
+    background-color: black;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+input{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    border: 0px;
+    text-align: left;
+    font-size: 90%;
+    color: #F03558;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(60px, auto);
+}
+
+.num{
+    background-color: #FCF5F2;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.num:hover{
+    opacity: 0.8;
+}
+
+.num:active{
+    opacity: 0.2;
+}
+
+.clear{
+    background-color: #F03558;
+    margin: 5px;
+    border: none;
+    grid-column: 1/3;
+    grid-row: 1;
+    border-radius: 10px;
+}
+
+.clear:hover{
+    opacity: 0.8;
+}
+
+.clear:active{
+    opacity: 0.2;
+}
+
+.equal{
+    background-color: #F03558;
+    margin: 5px;
+    border: none;
+    grid-row: 6;
+    grid-column: 1/4;
+    border-radius: 10px;
+}
+
+.equal:hover{
+    opacity: 0.8;
+}
+
+.equal:active{
+    opacity: 0.2;
+}
+
+
+.operation{
+    background-color: #F7A3AE;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    grid-column: 4;
+}
+
+.operation:hover{
+    opacity: 0.8;
+}
+
+.operation:active{
+    opacity: 0.2;
+}
+
+.Del{
+    background-color: #F03558;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.Del:hover{
+    opacity: 0.8;
+}
+
+.Del:active{
+    opacity: 0.2;
+}
+
+
+
+.Negative{
+    background-color: #F7A3AE;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    grid-row: 6;
+}
+
+.Negative:hover{
+    opacity: 0.8;
+}
+
+.Negative:active{
+    opacity: 0.2;
+}
+
+
+.Point{
+    background-color: #FCF5F2;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    grid-column: 2/4;
+    font-weight: bolder;
+}
+
+.Point:hover{
+    opacity: 0.8;
+}
+
+.Point:active{
+    opacity: 0.2;
+}
+input{
+    text-align: center;
+}
+
+*{
+    margin:0;
+    padding: 10px;
+    box-sizing:content-box;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight:normal;
+}
